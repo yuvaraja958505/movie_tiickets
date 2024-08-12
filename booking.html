@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width:600px) {
+            .form{
+                width: 320px;
+                height: 340px;
+                padding: 20px;
+                border: 1px solid black;
+                margin-left: 30px;
+                margin-top: 10%;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                backdrop-filter: blur(5px);
+                
+            
+            }
+            .form h2{
+                text-align: center;
+                color: white;
+                font-size: 15px;
+            }
+            .form label{
+                display:block;
+                font-size: 15px;
+                margin-top: 20px;
+                color: white;
+                /* background-color: aqua; */
+            }
+            .form input{
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 5px;
+                color: white;
+                background-color: transparent;
+            
+            }
+            .form input::placeholder{
+                color: white;
+            }
+            .form button{ 
+                margin-top: 10px;
+                margin-left:0px ;
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: brown;
+                color: white;
+            }
+            
+             
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid bg">
+        <div class=" header">
+            <h1>Movie Tickets</h1>
+            
+        </div>
+        <form action="" class="form">
+            <h2>Movie Tickets</h2>
+            <label for="your_movies">Movies</label>
+            <select id="your_movies">
+                <option value="choose">--choose--</option>
+                <option value="Garudan">Garudan</option>
+                <option value="Maharaja">Maharaja</option>
+                <option value="Indian2">Indian 2</option>
+                <option value="Weapon">Weapon</option>
+                <option value="Aranmanai4">Aranmanai 4</option>
+                <option value="Rathnam">Rathnam</option>
+                <option value="Kalvan">Kalvan</option>
+                <option value="Rasavathi">Rasavathi</option>
+                <option value="Yaarum_Vallavare">Yaarum Vallavare</option>
+                <option value="Blue_star">Blue Star</option>
+            </select>
+    
+            <label for="your_show">Shows</label>
+            <select id="your_show">
+                <option value="choose">--choose--</option>
+                <option value="First show">First show</option>
+                <option value="Second show">Second show</option>
+                <option value="Third show">Third show</option>
+                <option value="Fourth show">Fourth show</option>
+            </select>
+    
+            <label for="People">How many tickets</label>                                                                      
+            <input type="number" placeholder="Enter number of tickets" id="People" min="1">
+    
+            <button type="button" onclick="booking()">Book Now</button>
+            
+        </form>
+    </div>
+
+
+    <script>
+        function booking(){
+            var your_movies = document.getElementById('your_movies').value;
+            var people = document.getElementById('People').value;
+            var show = document.getElementById('your_show').value
+    
+            // Check if a valid movie and number of people are selected
+            if (your_movies === "choose") {
+                alert("Please select a movie.");
+                return;
+            }
+    
+            people = parseInt(people);
+            if (isNaN(people) || people < 1) {
+                alert("Please enter a valid number of tickets.");
+                return;
+            }
+    
+            // Movie prices
+            var prices = {
+                Garudan: 300,
+                Maharaja: 400,
+                Indian2: 600,
+                Weapon: 300,
+                Aranmanai4: 300,
+                Rathnam: 160,
+                Kalvan: 300,
+                Rasavathi: 450,
+                Yaarum_Vallavare: 400,
+                Blue_star: 200
+            };
+    
+            // Calculate the total price
+            var total = prices[your_movies] * people;
+    
+            // Apply offer if total >= 1000
+            if (total >= 1000) {
+                var offer_total = total - 200;
+                alert('Your offer total bill is ' + offer_total +' your show ' +show);
+                window.location.assign('pay.html')
+            } else {
+                alert('Your total bill is ' + total +' your show ' +show);
+                window.location.assign('pay.html')
+            }
+        }
+    </script>
+    
+</body>
+</html>

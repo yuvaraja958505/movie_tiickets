@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garudan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container-fluid header " >
+        <h1 >Movie Tickets</h1>
+</div>
+
+<div class="container-fluid navbar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Movies</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="dashbord.html">Home</a>
+              <a class="nav-link  active" href="#movie">Movies</a>
+              <a class="nav-link  active" href="#">About Us</a>
+              <a class="nav-link  active " href="#footer"  >Contact Us</a>
+              <input type="text" list="dropdown" placeholder="choose the movie" class="mov">
+              <datalist id="dropdown">
+                <option value="Garudan"></option>
+                <option value="maharaja"></option>
+                <option value="indian2"></option>
+                <option value="Weapon"></option>
+                <option value="Aranmanai4"></option>
+                <option value="Rathnam"></option>
+                <option value="kalvan"></option>
+                <option value="Rasavathi"></option>
+                <option value="Yaarum Vallavare"></option>
+                <option value="Blue star"></option>
+              </datalist>
+              <input type="text" list="dropdown1" placeholder="choose the location">
+              <datalist id="dropdown1">
+                <option value="coimbatore"></option>
+                <option value="madurai"></option>
+                <option value="chennai"></option>
+                <option value="dindigul"></option>
+                <option value="salam"></option>
+                <option value="erode"></option>
+                 
+              </datalist>
+
+
+              <button type="button" class="btn"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> schedule </button>
+              
+            </div>
+          </div>
+         
+        </div>
+      </nav>
+      
+        
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel">schedule</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <table class="tb">
+        <tr>
+            <th>S.no</th>
+            <th>Movie Name</th>
+            <th>  movie starting time </th>
+            <th>  movie ending time </th>
+            <th>movie Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Garudan</td>
+            <td>9:00AM</td>
+            <td>11:30AM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Maharaja</td>
+            <td>11:45AM</td>
+            <td>1:15PM</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Indian2</td>
+            <td>1:30AM</td>
+            <td>3:15PM</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Weapon</td>
+            <td>3:30AM</td>
+            <td>5:15PM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aranmanai 4</td>
+            <td>5:30AM</td>
+            <td>7:15PM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Rathnam</td>
+            <td>7:30AM</td>
+            <td>9:15PM</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Garudan</td>
+            <td>(next day)9:00AM</td>
+            <td>11:30AM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>(next day)Maharaja</td>
+            <td>11:45AM</td>
+            <td>1:15PM</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>(next day)Indian2</td>
+            <td>1:30AM</td>
+            <td>3:15PM</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>(next day)Weapon</td>
+            <td>3:30AM</td>
+            <td>5:15PM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>(next day)Aranmanai 4</td>
+            <td>5:30AM</td>
+            <td>7:15PM</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>(next day)Rathnam</td>
+            <td>7:30AM</td>
+            <td>9:15PM</td>
+            <td>160</td>
+        </tr> 
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container-fluid gar">
+    <div class="sectiion1">
+        <img src="./img/Garudan.jpg" alt="" width="200px" height="300px">
+        <div class="box2">
+            <h1 class="mt-5 ms-5 ">Garudan</h1>
+            <p class="details">2h 21m
+                •
+                Comedy
+                ,
+                Thriller
+                •
+                UA
+                •
+                9 Aug, 2024</p>
+                <a href="booking.html">
+        <button type="button" class="btn bg-danger book "   > Book Tickets</button>
+      </a>
+ 
+        </div>
+    </div>
+</div>
+
+<div class="section2">
+    <h4>About the movie</h4>
+    <p class="ph">Andhagan is a drama film directed by Thyagarajan, featuring Prashanth and Simran in prominent roles.</p>
+</div>
+<footer>
+  <div class="footer bg-dark" id="footer">
+    <h1 class="copy">@2024 copy right </h1>
+    <h1 class="contact"> contact us<h1>
+      <p class="con">Email:yuvar189@gmaiil.com</p>
+      <p class="con">Phone.No: 9585059823</p>
+  </div>
+</footer>
+
+ 
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

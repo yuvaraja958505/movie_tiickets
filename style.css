@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+     
+}
+.bg{
+    background-image: url(./img/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    justify-content: center;
+
+}
+
+.header{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.form{
+    width: 350px;
+    height: 380px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    
+
+}
+.form h2{
+    text-align: center;
+    color: white;
+}
+.form label{
+    display:block;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    /* background-color: aqua; */
+}
+.form input{
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+    background-color: transparent;
+
+}
+.form input::placeholder{
+    color: white;
+}
+.form button{ 
+    margin-top: 40px;
+    margin-left:10px ;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+.form button:hover{
+    background-color: rgb(197, 197, 197);
+    color: black;
+    cursor: pointer;
+}
+form select{
+    width: 280px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+ 
+ 
+.navbar{
+    background-color:  rgb(234, 234, 234)
+}
+.nav {
+    margin-left: 65%;
+     
+    
+
+}
+.nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+}
+.navbar-nav > .btn{
+    background-color: blue;
+    color: white;
+    /* margin-left: 1000px; */
+    
+    
+
+}
+.navbar-nav  .mov{
+    margin-left:600px;
+}
+.navbar-nav input{
+    margin-right: 10px;
+    /* border: none; */
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+.tb{
+    margin-left: 200px;
+}
+.tb tr{
+    border: 2px solid black;
+    padding: 10px;
+}
+.tb td{
+    border: 2px solid black;
+    padding: 10px;
+}
+.tb th{
+    border: 2px solid black;
+    padding: 10px;
+}
+.card{
+    /* display: flex; */
+    width: 210px;
+}
+ 
+ 
+ 
+.flex-container{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    
+}
+.flex-container>.box1{
+    border-radius: 20px;
+    /* border: 3px solid black; */
+    overflow: hidden;
+    padding: 5px;
+    
+}
+.flex-container>.box1 img{
+    border-radius: 10px;
+    width:200px;
+    height:300px
+}
+.flex-container>.box1 img:hover{
+    cursor: pointer;
+}
+.gar {
+    height: 400px;
+    margin-top: 40px;
+    /* background-image: url(./img/ga-bg.jpeg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.35)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.35));
+     
+    
+ 
+}
+.sectiion1{
+    display: flex;
+}
+ 
+.sectiion1 img{
+    margin-top: 50px;
+    margin-left: 100px;
+    width:200px;
+    height:300px
+    
+   
+}
+.sectiion1 .gar,h1{
+    color:white;
+     
+    height: 50px;
+
+}
+.sectiion1 .gar,.details{
+    color: white;
+    margin-left: 50px;
+}
+.book{
+    margin-left: 50px;
+}
+.section2 .ph{
+    color: black;
+    margin-left: 50px;
+
+}
+.section2 h4{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.footer{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+ .copy{
+     
+    font-size: 20px;
+    display: flex;
+    margin-left: 680px;
+    padding-top: 30px;
+}
+.footer > .contact,.con{
+    font-size: 20px;
+    top: 0;
+}
+ 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .form{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border: 1px solid black;
+        margin-left: 30px;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        
+    
+    }
+    .form h2{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+    .form label{
+        display:block;
+        font-size: 15px;
+        margin-top: 20px;
+        color: white;
+        /* background-color: aqua; */
+    }
+    .form input{
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 5px;
+        color: white;
+        background-color: transparent;
+    
+    }
+    .form input::placeholder{
+        color: white;
+    }
+    .form button{ 
+        margin-top: 10px;
+        margin-left:0px ;
+        width: 250px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: brown;
+        color: white;
+    }
+    .tb{
+        margin-left: 0px;
+    }
+    .navbar-nav > .btn{
+        background-color: blue;
+        color: white;
+        /* margin-left: 1000px; */
+        width: 200PX;
+    }
+     
+    .navbar-nav input{
+        margin-right: 10px;
+        margin-bottom: 20px;
+        /* border: none; */
+        border-radius: 5px;
+        width: 200PX;
+        background-color: transparent;
+    }
+    .navbar-toggler{
+         margin-left: 0px;
+          
+    }
+    .navbar-nav  .mov{
+        margin-left:0px;
+    }
+    .flex-container{
+        display: flex;
+        margin-top: 20px;
+        /* justify-content: space-around; */
+        
+    }
+    .flex-container>.box1{
+        border-radius: 20px;
+        /* border: 3px solid black; */
+        overflow: hidden;
+        padding: 5px;
+        
+    }
+    .flex-container>.box1 img{
+        border-radius: 10px;
+        width:100px;
+        height:200px
+    }
+    .navbar{
+        width: 100%;
+    }
+
+    .sectiion1 img{
+        margin-top: 50px;
+        margin-left: 50px;
+        width:100px;
+        height:150px
+        
+       
+    }
+    .copy{
+     
+        font-size: 10px;
+        display: flex;
+        margin-left: 150px;
+        padding-top: 30px;
+    }
+    .footer > .contact,.con{
+        font-size: 10px;
+        top: 0;
+    }
+
+    
+}

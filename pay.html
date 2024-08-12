@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width:600px) {
+            .form{
+                width: 320px;
+                height: 340px;
+                padding: 20px;
+                border: 1px solid black;
+                margin-left: 40px;
+                margin-top: 10%;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                backdrop-filter: blur(5px);
+                
+            
+            }
+            .form h2{
+                text-align: center;
+                color: white;
+                font-size: 15px;
+            }
+            .form label{
+                display:block;
+                font-size: 15px;
+                margin-top: 20px;
+                color: white;
+                /* background-color: aqua; */
+            }
+            .form input{
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 5px;
+                color: white;
+                background-color: transparent;
+            
+            }
+            .form input::placeholder{
+                color: white;
+            }
+            .form button{ 
+                margin-top: 10px;
+                margin-left:0px ;
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: brown;
+                color: white;
+            }
+            
+             
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid bg">
+        <div class=" header">
+            <h1>Movie Tickets</h1>
+            
+        </div>
+        <form action="" class="form">
+            <h2>Payment Process</h2>
+            <label for="">Enter the name</label>
+            <input type="text" placeholder="Enter the Name" id="name">
+            <label for="">Amount</label>                                                                      
+            <input type="number" placeholder="Ether the Amount" id="amount">
+            <button type="button" onclick="pay()">Pay</button>
+            
+        </form>
+    </div>
+
+
+    <script>
+        function pay(){
+            var your_movies = document.getElementById('name').value;
+            var people = document.getElementById('amount').value;
+            alert('your payment successfully')
+            window.location.assign('dashbord.html')
+
+        }
+            
+    </script>
+    
+</body>
+</html>
